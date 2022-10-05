@@ -1,0 +1,17 @@
+*{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.productdetail{
+    border: 3px solid pink;
+    background-color: pink;
+    margin: 100px 30%;
+    padding: 40px;
+}
+
+.productdetail p{
+    margin: 15px;
+    
+}
