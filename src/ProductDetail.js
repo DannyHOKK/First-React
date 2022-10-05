@@ -3,7 +3,7 @@ import {useParams, Link} from 'react-router-dom'
 import Title from './Title'
 import QuantityBtn from './QuantityBtn'
 import { useEffect } from 'react'
-import stlyes from './ProductDetail.module.css'
+import styles from './ProductDetail.module.css'
 
 export default function ProductDetail() {
 
@@ -32,7 +32,8 @@ export default function ProductDetail() {
                 productDetail &&
                 <div>
                     <Title mainTitle ={productDetail.name + " ProductDetail"}/>
-                    <div className={stlyes.productdetail}>
+
+                    <div className={styles.productdetail}>
                         <img src={process.env.PUBLIC_URL+'/img/'+ productDetail.image} width="400"  />
                         <p>{productDetail.name}</p>
                         <p>{productDetail.price}</p>
@@ -42,7 +43,7 @@ export default function ProductDetail() {
                 </div>
             }
 
-            <Link to='/'> Back to Home Page</Link>
+            <Link className={styles.HomeBtn} to='/'> Back to Home Page</Link>
         </div>
     )
 }

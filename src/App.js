@@ -4,6 +4,7 @@ import Checkout from './Checkout';
 import ProductDetail from './ProductDetail';
 import {CartContext} from './CartContext'
 import { useState } from 'react';
+import styles from './App.module.css'
 
 function App() {
 
@@ -13,9 +14,10 @@ function App() {
     <BrowserRouter>
  
       <CartContext.Provider value = {{cartItems,setCartItems}}>
-
-      <Link to ="/">Home page</Link>
-      <Link to ="/checkout">Shopping cart</Link>
+      <nav className={styles.nav}>
+        <Link className={styles.HomeBtn} to ="/">Home page</Link>
+        <Link className={styles.HomeBtn} to ="/checkout">Shopping cart</Link>
+      </nav>
         <Routes>
           <Route path='/' element={<ProductList/>} />
           <Route path='/checkout' element={<Checkout/>} />
@@ -27,6 +29,7 @@ function App() {
 
         </CartContext.Provider>
     </BrowserRouter>
+    
   );
 }
 

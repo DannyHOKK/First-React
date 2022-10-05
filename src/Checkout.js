@@ -23,9 +23,9 @@ export default function Checkout() {
             
             {
                 cartEmpty &&
-                <div>
-                    Shopping Cart have no item<br/>
-                    <Link to='/'>cfsfd</Link>
+                <div style={{marginTop: 30, fontSize:30}}>
+                    <p style={{marginTop: 30, fontSize:30}}>Shopping Cart have no item</p><br/>
+                    
                 </div>
             }
 
@@ -36,24 +36,24 @@ export default function Checkout() {
                         {
                             cartItems.map((product)=>(
                                 <div className={styles.Checkout} key = {product.id}>
-                                <img src={process.env.PUBLIC_URL+'/img/'+ product.image} width='500'/><br/>
+                                <img src={process.env.PUBLIC_URL+'/img/'+ product.image} width='300'/><br/>
                                     <p>{product.name}</p>
                                     <p>{product.description}</p>
                                     <p>{product.price}</p>
                                     <p>Quantity: {product.quantity}</p>
-                                    <p><QuantityBtn productInfo={product}/></p>
+                                    <QuantityBtn productInfo={product}/>
                                 </div>
                             ))
                         }
                     </div>
                     <div id="checkOutSection">
-                        <div>Total Price of items</div>
-                        <div>${grandTotal}</div>
+                        <div style={{margin:10, fontSize: 20}}>Total Price of items</div>
+                        <div style={{margin:10, fontSize: 20}}>${grandTotal}</div>
 
                         {
                             grandTotal >= freeShippingPrice ?
-                            <div>Free Shipping</div> :
-                            <div>fulfill${freeShippingPrice} then Free Shipping<br/>
+                            <div style={{margin:30, fontSize: 20}}>Free Shipping</div> :
+                            <div style={{margin:30, fontSize: 20}}>fulfill${freeShippingPrice} then Free Shipping<br/>
                             Still need ${freeShippingPrice - grandTotal}
                             </div>
                         }

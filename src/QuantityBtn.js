@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { CartContext } from './CartContext'
+import styles from './QuantityBtn.module.css'
 
 export default function QuantityBtn({productInfo}) {
 
@@ -58,11 +59,11 @@ export default function QuantityBtn({productInfo}) {
 
         {
             (numInCart === 0) ?
-            <div onClick={handleAdd}>Add to ShoppingCart</div> :
-            <div>
-                <span onClick={handleSubtract}>-</span>
-                {numInCart}items
-                <span onClick={handleAdd}>+</span>
+            <button className={styles.Btn} onClick={handleAdd}>Add to ShoppingCart</button> :
+            <div className={styles.display}>
+                <button className={styles.Btn} style={{fontSize:16}} onClick={handleSubtract}>-</button>
+                <p className={styles.text}>{numInCart}  items </p>
+                <button  className={styles.Btn} onClick={handleAdd}>+</button>
             </div>
         }
     </div>

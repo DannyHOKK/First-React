@@ -1,17 +1,25 @@
 *{
     text-align: center;
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
 }
 
 .productdetail{
-    border: 3px solid pink;
+    border: 3px solid rgb(141, 70, 82);
     background-color: pink;
-    margin: 100px 30%;
+    margin: 6rem 40rem;
     padding: 40px;
 }
 
 .productdetail p{
     margin: 15px;
     
+}
+
+.HomeBtn{
+    border: 2px solid black;
+    border-radius: 20px 20px;
+    padding: 10px;
+    color: blue;
+    text-decoration: none;
 }
