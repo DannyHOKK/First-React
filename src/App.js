@@ -15,7 +15,8 @@ function App() {
  
       <CartContext.Provider value = {{cartItems,setCartItems}}>
       <nav className={styles.nav}>
-        <Link className={styles.HomeBtn} to ="/">Home page</Link>
+        <a className={styles.HomeBtn} href ="https://dannyhkk.pages.dev/">Home page</a>
+        <Link className={styles.HomeBtn} to ="/">Items</Link>
         <Link className={styles.HomeBtn} to ="/checkout">Shopping cart</Link>
       </nav>
         <Routes>
