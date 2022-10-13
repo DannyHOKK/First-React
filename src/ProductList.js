@@ -8,12 +8,12 @@ import QuantityBtn from './QuantityBtn'
 export default function ProductList() {
     
     let productlist =[        
-        {"id" : 1, "name": "Basketball", "price": 1000 , "image" : "basketball.jpg", "description" : "XXXXX"},
-        {"id" : 2, "name": "Batminton", "price": 2000 , "image" : "batminton.jpg", "description" : "XXXXX"},
-        {"id" : 3,"name" : "Table tennis", "price" : 1500, "image" : "Table tennis.jpg","description":"XXXXX"},
-        {"id" : 4,"name" : "soccer", "price" : 2500,"image" : "soccer.jpg","description":"XXXXX"},
-        {"id" : 5,"name" : "golf", "price" : 800,"image" : "golf.jpg","description":"XXXXX"},
-        {"id" : 6,"name" : "handball", "price" : 1000,"image" : "handball.jpg","description":"XXXXX"}
+        {"id" : 1, "name": "Basketball", "price": 1000 , "image" : "basketball.jpeg", "description" : "XXXXX"},
+        {"id" : 2, "name": "Batminton", "price": 2000 , "image" : "batminton.jpeg", "description" : "XXXXX"},
+        {"id" : 3,"name" : "Table tennis", "price" : 1500, "image" : "Table tennis.jpeg","description":"XXXXX"},
+        {"id" : 4,"name" : "soccer", "price" : 2500,"image" : "soccer.jpeg","description":"XXXXX"},
+        {"id" : 5,"name" : "golf", "price" : 800,"image" : "golf.jpeg","description":"XXXXX"},
+        {"id" : 6,"name" : "handball", "price" : 1000,"image" : "handball.jpeg","description":"XXXXX"}
     ]
 
 
