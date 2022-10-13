@@ -34,7 +34,7 @@ export default function ProductList() {
 return(
     //REACT FRAGMENT
     <>
-        <Title mainTitle="Select Your Pornstar!"/>
+        <Title mainTitle="Select Your Sport!"/>
 
         <div className={styles.showproduct}>
             {
