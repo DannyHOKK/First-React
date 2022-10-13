@@ -34,7 +34,7 @@ export default function ProductDetail() {
                     <Title mainTitle ={productDetail.name + " ProductDetail"}/>
 
                     <div className={styles.productdetail}>
-                        <img src={process.env.PUBLIC_URL+'/img/'+ productDetail.image} width="400"  />
+                        <img src={process.env.PUBLIC_URL+'/img/'+ productDetail.image} width="300" height="270" />
                         <p>{productDetail.name}</p>
                         <p>{productDetail.price}</p>
                         <p>{productDetail.description}</p>
