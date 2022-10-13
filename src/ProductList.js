@@ -43,7 +43,7 @@ return(
                         <h1>{product.name}</h1>
                         <p>Price: {product.price}</p>
                         <Link to={'/product/ '+ product.id}>
-                        <img src={process.env.PUBLIC_URL+'/img/'+ product.image} width='500' height="550" /><br/>
+                        <img src={process.env.PUBLIC_URL+'/img/'+ product.image} width='300' height="270" /><br/>
                         </Link>
                         <p>{product.description}</p>
                         <QuantityBtn productInfo={product} />
