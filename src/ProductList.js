@@ -6,14 +6,14 @@ import Title from './Title'
 import QuantityBtn from './QuantityBtn'
 
 export default function ProductList() {
-
-    let productlist =[
-        {"id" : 1, "name": "三上攸亞", "price": 1000 , "image" : "yau.jpg", "description" : "XXXXX"},
-        {"id" : 2, "name": "橋本有菜", "price": 2000 , "image" : "kiu.jpg", "description" : "XXXXX"},
-        {"id" : 3,"name" : "波多野結衣", "price" : 1500, "image" : "ball.jpg","description":"XXXXX"},
-        {"id" : 4,"name" : "明日花綺羅", "price" : 2500,"image" : "flower.jpg","description":"XXXXX"},
-        {"id" : 5,"name" : "深田詠美", "price" : 800,"image" : "tin.jpg","description":"XXXXX"},
-        {"id" : 6,"name" : "小島南", "price" : 1000,"image" : "small.jpg","description":"XXXXX"}
+    
+    let productlist =[        
+        {"id" : 1, "name": "Basketball", "price": 1000 , "image" : "basketball.jpg", "description" : "XXXXX"},
+        {"id" : 2, "name": "Batminton", "price": 2000 , "image" : "batminton.jpg", "description" : "XXXXX"},
+        {"id" : 3,"name" : "Table tennis", "price" : 1500, "image" : "Table tennis.jpg","description":"XXXXX"},
+        {"id" : 4,"name" : "soccer", "price" : 2500,"image" : "soccer.jpg","description":"XXXXX"},
+        {"id" : 5,"name" : "golf", "price" : 800,"image" : "golf.jpg","description":"XXXXX"},
+        {"id" : 6,"name" : "handball", "price" : 1000,"image" : "handball.jpg","description":"XXXXX"}
     ]
 
 
